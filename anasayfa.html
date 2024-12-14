@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TR | Galatasaray</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+            font-family: "Poppins", serif;
+            font-style: normal;
+        }
+
+        body{
+            height: 110vh;
+            width: 100vw;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background-image: linear-gradient(rgb(255, 230, 0), rgb(255, 0, 0));
+        }
+
+        table{
+            background-color: #f5f5f5;
+            border-radius: 25px;
+            border: 3px solid #fff;
+            height: 900px;
+            width: 1000px;
+            border-collapse: collapse;
+
+            box-shadow: 5px 10px 20px #000000;
+        }
+
+        .starter{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        img {
+            display: inline;
+        }
+
+        .image-container { 
+            position: relative; 
+            width: 300px; 
+            height: 50px; 
+            background-image: image-set("img.png"); 
+            background-size: cover; 
+            background-position: center; 
+            border: 1px solid #000000;
+        } 
+
+        .image-container2 { 
+            position: relative; 
+            height: 40vh; 
+            width: 50vw;
+            background-image: image-set("ekip.png"); 
+            background-size: cover; 
+            background-position: center; 
+            border: 1px solid #000000;
+
+            display: flex;
+        } 
+
+        .text-overlay { 
+            position: absolute; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            color: red; 
+            font-size: 24px; 
+            font-weight: bold; 
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        h1 {
+            border-bottom: 2px solid rgb(0, 0, 0);
+            font-weight: 2000;
+            font-size: 48px;
+
+            margin: 15px;
+        }
+
+        h2{
+            font-weight: 1000;
+            font-size: 32px;
+        }
+
+        .text{
+            padding: 20px;
+            
+            margin: 10px;
+            width: 95%;
+            height: 45vh;
+            
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+
+            border: 2px solid rgb(0, 0, 0);
+            border-radius: 25px;
+
+            box-shadow: 5px 10px 20px #000000;
+            background-color: #e0e0e0;
+
+            transition: 0.3s;
+        }
+
+        /*.text:hover{
+            width: 95.5%;
+            height: 46vh;
+        }*/
+
+        .text .paragraf{
+            border-bottom: 2px solid rgb(0, 0, 0);
+            border-top: 2px solid rgb(0, 0, 0);
+            flex: 1;
+        }
+
+        .img{
+            height: 20vh;
+            width: 10vw;
+            object-fit: cover;
+            border-radius: 5px;
+            margin: 10px;
+        }
+
+        .read {
+            overflow-y: auto;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .center{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 1000;
+        }
+    </style>
+</head>
+<body>
+    <table border=2 width=1000 align="center">
+        <tr>
+            <td colspan=2 height=350>
+                <div class="starter">
+                    <div class="image-container2"> 
+                        <div class="text-overlay">GALATASARAY</div> 
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="menu" width=300>
+                <a href="anasayfa.html" target="_parent">
+                    <div class="image-container"> 
+                        <div class="text-overlay">Ana Sayfa</div> 
+                    </div>
+                </a>
+                <a href="fikstur.html" target="_parent">
+                    <div class="image-container"> 
+                        <div class="text-overlay">Fikstür</div> 
+                    </div>
+                </a>
+                <a href="Kadro.html" target="_parent">
+                    <div class="image-container"> 
+                        <div class="text-overlay">Kadro</div> 
+                    </div>
+                </a>
+                <a href="Kupalar.html" target="_parent">
+                    <div class="image-container"> 
+                        <div class="text-overlay">Kupalar</div> 
+                    </div>
+                </a>
+                <a href="Taraftar.html" target="_parent">
+                    <div class="image-container"> 
+                        <div class="text-overlay">Taraftar</div> 
+                    </div>
+                </a>
+                <a href="Tarihçe.html" target="_parent">
+                    <div class="image-container"> 
+                        <div class="text-overlay">Tarihçe</div> 
+                    </div>
+                </a>
+                <a href="#" target="_parent">
+                    <div class="image-container"> 
+                        <div class="text-overlay">Tesisler</div> 
+                    </div>
+                </a>
+                <a href="#" target="_parent">
+                    <div class="image-container"> 
+                        <div class="text-overlay">Voleybol</div> 
+                    </div>
+                </a>
+                <a href="#" target="_parent">
+                    <div class="image-container"> 
+                        <div class="text-overlay">Basketbol</div> 
+                    </div>
+                </a>
+                <a href="#" target="_parent">
+                    <div class="image-container"> 
+                        <div class="text-overlay">GS Store</div> 
+                    </div>
+                </a>
+                <a href="#" target="_parent">
+                    <div class="image-container"> 
+                        <div class="text-overlay">GS TV</div> 
+                    </div>
+                </a>
+            </td>
+            <td class="read" height=550 bgcolor="#C11B17" align="center">
+                <div class="text">
+                    <div class="paragraf">
+                        <h2>Galatasaray Spor Kulübü'ne Hoş Geldiniz!</h2>
+                        <h4>Türkiye’nin en köklü ve en başarılı spor kulüplerinden biri olan Galatasaray Spor Kulübü’ne hoş geldiniz. 1905 yılında Ali Sami Yen ve arkadaşları tarafından kurulan kulübümüz, 100 yılı aşkın süredir başarıları ve ilkeleri ile Türk sporunun öncüsü olmuştur. UEFA'da Türkiye'yi gururla temsil eden, sayısız şampiyonluk ve başarı ile dolu tarihimizle gurur duyuyoruz.</h4>
+                    </div>
+                    <img class="img" src="https://yt3.googleusercontent.com/iWccFwYO99Uphnd55JhnEN0jQIFR8QCD1p1t3Qjp_BsBbX9PvApzTdE-dSXL6A4bThxpTG9LMA=s900-c-k-c0x00ffffff-no-rj" alt="">
+                </div>
+            </td>
+            
+        </tr>
+        <tr>
+            <td colspan=2 class="center" height=70>
+                <h3>Hiçbir hakkı saklı değildir!</h3>
+            </td>
+        </tr>
+    </table>
+
+    <script src="script.js"></script>
+</html>
+</body>
+</html>

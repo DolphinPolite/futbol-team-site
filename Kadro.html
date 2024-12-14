@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TR | Galatasaray</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+            font-family: "Poppins", serif;
+            font-style: normal;
+        }
+
+        body{
+            height: 110vh;
+            width: 100vw;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background-image: linear-gradient(rgb(255, 230, 0), rgb(255, 0, 0));
+        }
+
+        table{
+            background-color: #f5f5f5;
+            border-radius: 25px;
+            border: 3px solid #fff;
+            height: 900px;
+            width: 1000px;
+
+            box-shadow: 5px 10px 20px #000000;
+        }
+
+        .starter{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        img {
+            display: block;
+        }
+
+        .image-container { 
+            position: relative; 
+            width: 300px; 
+            height: 50px; 
+            background-image: image-set("img.png"); 
+            background-size: cover; 
+            background-position: center; 
+            border: 1px solid #000000;
+        } 
+
+        .image-container2 { 
+            position: relative; 
+            height: 40vh; 
+            width: 50vw;
+            background-image: image-set("ekip.png"); 
+            background-size: cover; 
+            background-position: center; 
+            border: 1px solid #000000;
+
+            display: flex;
+        } 
+
+        .text-overlay { 
+            position: absolute; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            color: red; 
+            font-size: 24px; 
+            font-weight: bold; 
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        h1 {
+            border-bottom: 2px solid rgb(0, 0, 0);
+            font-weight: 2000;
+            font-size: 48px;
+
+            margin: 15px;
+        }
+
+        h2{
+            font-weight: 1000;
+            font-size: 32px;
+        }
+
+        .text{
+            padding: 20px;
+            
+            margin: 10px;
+            width: 80%;
+            height: 550vh;
+            
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+
+            border: 2px solid rgb(0, 0, 0);
+            border-radius: 25px;
+
+            box-shadow: 5px 10px 20px #000000;
+            background-color: #e0e0e0;
+
+            transition: 0.3s;
+        }
+
+        text table tr td{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /*.text:hover{
+            width: 81%;
+            height: 560vh;
+        }*/
+
+        .text .paragraf{
+            border-bottom: 2px solid rgb(0, 0, 0);
+            border-top: 2px solid rgb(0, 0, 0);
+            flex: 1;
+        }
+
+        .img{
+            height: 20vh;
+            width: 10vw;
+            object-fit: cover;
+            border-radius: 5px;
+            margin: 10px;
+        }
+
+        .read {
+            overflow-y: auto;
+            width: 680px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .center{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 1000;
+        }
+    </style>
+</head>
+<body>
+    <table border=2 width=1000 align="center">
+        <tr>
+            <td colspan=2 height=350>
+                <div class="starter">
+                    <div class="image-container2"> 
+                        <div class="text-overlay">GALATASARAY</div> 
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="menu" width=300>
+                <a href="anasayfa.html" target="_parent">
+                    <div class="image-container"> 
+                        <div class="text-overlay">Ana Sayfa</div> 
+                    </div>
+                </a>
+                <a href="fikstur.html" target="_parent">
+                    <div class="image-container"> 
+                        <div class="text-overlay">Fikstür</div> 
+                    </div>
+                </a>
+                <a href="Kadro.html" target="_parent">
+                    <div class="image-container"> 
+                        <div class="text-overlay">Kadro</div> 
+                    </div>
+                </a>
+                <a href="Kupalar.html" target="_parent">
+                    <div class="image-container"> 
+                        <div class="text-overlay">Kupalar</div> 
+                    </div>
+                </a>
+                <a href="Taraftar.html" target="_parent">
+                    <div class="image-container"> 
+                        <div class="text-overlay">Taraftar</div> 
+                    </div>
+                </a>
+                <a href="Tarihçe.html" target="_parent">
+                    <div class="image-container"> 
+                        <div class="text-overlay">Tarihçe</div> 
+                    </div>
+                </a>
+                <a href="#" target="_parent">
+                    <div class="image-container"> 
+                        <div class="text-overlay">Tesisler</div> 
+                    </div>
+                </a>
+                <a href="#" target="_parent">
+                    <div class="image-container"> 
+                        <div class="text-overlay">Voleybol</div> 
+                    </div>
+                </a>
+                <a href="#" target="_parent">
+                    <div class="image-container"> 
+                        <div class="text-overlay">Basketbol</div> 
+                    </div>
+                </a>
+                <a href="#" target="_parent">
+                    <div class="image-container"> 
+                        <div class="text-overlay">GS Store</div> 
+                    </div>
+                </a>
+                <a href="#" target="_parent">
+                    <div class="image-container"> 
+                        <div class="text-overlay">GS TV</div> 
+                    </div>
+                </a>
+            </td>
+            <td class="read" height=550 bgcolor="#C11B17" align="center">
+                <div class="text">
+                    <table border="2" width="1" align="center">
+                        <tr>
+                          <td><b>Oyuncu</b></td>
+                          <td><b>Yaş</b></td>
+                          <td><b>Uyruk</b></td>
+                          <td><b>Sözleşme</b></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img src="https://img.a.transfermarkt.technology/portrait/medium/58088-1671035581.png?lm=1" alt="">
+                            1
+                            <div>
+                              <h4>Fernando Muslera</h4>
+                              <h6>Kaleci</h6>
+                            </div>
+                          </td>
+                          <td>38</td>
+                          <td>Uruguay / İtalya</td>
+                          <td>30 Haz 2025</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img src="https://img.a.transfermarkt.technology/portrait/medium/114422-1665482264.png?lm=1" alt="">
+                            19
+                            <div>
+                              <h4>Günay Güvenç</h4>
+                              <h6>Kaleci</h6>
+                            </div>
+                          </td>
+                          <td>33</td>
+                          <td>Türkiye / Almanya</td>
+                          <td>30 Haz 2025</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img src="https://img.a.transfermarkt.technology/portrait/medium/352659-1693840675.png?lm=1" alt="">
+                            12
+                            <div>
+                              <h4>Batuhan Şen</h4>
+                              <h6>Kaleci</h6>
+                            </div>
+                          </td>
+                          <td>24</td>
+                          <td>Türkiye</td>
+                          <td>30 Haz 2025</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img src="https://img.a.transfermarkt.technology/portrait/medium/873532-1725634136.jpeg?lm=1" alt="">
+                            38
+                            <div>
+                              <h4>Atakan Ordu</h4>
+                              <h6>Kaleci</h6>
+                            </div>
+                          </td>
+                          <td>22</td>
+                          <td>Türkiye</td>
+                          <td>30 Haz 2025</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img src="https://img.a.transfermarkt.technology/portrait/medium/341429-1728904655.jpg?lm=1" alt="">
+                            6
+                            <div>
+                              <h4>Davinson Sánchez</h4>
+                              <h6>Defans</h6>
+                            </div>
+                          </td>
+                          <td>28</td>
+                          <td>Kolombiya</td>
+                          <td>30 Haz 2026</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img src="https://img.a.transfermarkt.technology/portrait/medium/422951-1671036376.png?lm=1" alt="">
+                            25
+                            <div>
+                              <h4>Victor Nelsson</h4>
+                              <h6>Defans</h6>
+                            </div>
+                          </td>
+                          <td>25</td>
+                          <td>Danimarka</td>
+                          <td>30 Haz 2026</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img src="https://img.a.transfermarkt.technology/portrait/medium/199316-1671036661.png?lm=1" alt="">
+                            42
+                            <div>
+                              <h4>Abdülkerim Bardakcı</h4>
+                              <h6>Defans</h6>
+                            </div>
+                          </td>
+                          <td>29</td>
+                          <td>Türkiye</td>
+                          <td>30 Haz 2026</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img src="https://img.a.transfermarkt.technology/portrait/medium/618869-1671037619.png?lm=1" alt="">
+                            90
+                            <div>
+                              <h4>Metehan Baltacı</h4>
+                              <h6>Defans</h6>
+                            </div>
+                          </td>
+                          <td>20</td>
+                          <td>Türkiye</td>
+                          <td>30 Haz 2025</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img src="https://img.a.transfermarkt.technology/portrait/medium/942939-1701182854.png?lm=1" alt="">
+                            58
+                            <div>
+                              <h4>Ali Yeşilyurt</h4>
+                              <h6>Defans</h6>
+                            </div>
+                          </td>
+                          <td>22</td>
+                          <td>Türkiye</td>
+                          <td>30 Haz 2026</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img src="https://img.a.transfermarkt.technology/portrait/medium/375137-1666691935.jpg?lm=1" alt="">
+                            4
+                            <div>
+                              <h4>Ismail Jakobs</h4>
+                              <h6>Defans</h6>
+                            </div>
+                          </td>
+                          <td>24</td>
+                          <td>Almanya</td>
+                          <td>30 Haz 2027</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img src="https://img.a.transfermarkt.technology/portrait/medium/646478-1662491413.jpg?lm=1" alt="">
+                            24
+                            <div>
+                              <h4>Elias Jelert</h4>
+                              <h6>Defans</h6>
+                            </div>
+                          </td>
+                          <td>20</td>
+                          <td>Danimarka</td>
+                          <td>30 Haz 2027</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img src="https://img.a.transfermarkt.technology/portrait/medium/119031-1701181677.png?lm=1" alt="">
+                            23
+                            <div>
+                              <h4>Kaan Ayhan</h4>
+                              <h6>Defans</h6>
+                            </div>
+                          </td>
+                          <td>29</td>
+                          <td>Türkiye</td>
+                          <td>30 Haz 2026</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img src="https://img.a.transfermarkt.technology/portrait/medium/318077-1671110829.png?lm=1" alt="">
+                            34
+                            <div>
+                              <h4>Lucas Torreira</h4>
+                              <h6>Orta Saha</h6>
+                            </div>
+                          </td>
+                          <td>28</td>
+                          <td>Uruguay</td>
+                          <td>30 Haz 2025</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img src="https://img.a.transfermarkt.technology/portrait/medium/1016253-1688834724.png?lm=1" alt="">
+                            20
+                            <div>
+                              <h4>Gabriel Sara</h4>
+                              <h6>Orta Saha</h6>
+                            </div>
+                          </td>
+                          <td>24</td>
+                          <td>Brezilya</td>
+                          <td>30 Haz 2026</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img src="https://img.a.transfermarkt.technology/portrait/medium/125858-1658913486.jpg?lm=1" alt="">
+                            8
+                            <div>
+                              <h4>Kerem Demirbay</h4>
+                              <h6>Orta Saha</h6>
+                            </div>
+                          </td>
+                          <td>31</td>
+                          <td>Almanya</td>
+                          <td>30 Haz 2026</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img src="https://img.a.transfermarkt.technology/portrait/medium/469787-1671101403.png?lm=1" alt="">
+                            18
+                            <div>
+                              <h4>Berkan Kutlu</h4>
+                              <h6>Orta Saha</h6>
+                            </div>
+                          </td>
+                          <td>26</td>
+                          <td>Türkiye</td>
+                          <td>30 Haz 2025</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img src="https://img.a.transfermarkt.technology/portrait/medium/605110-1692858797.png?lm=1" alt="">
+                            5
+                            <div>
+                              <h4>Eyüp Aydın</h4>
+                              <h6>Orta Saha</h6>
+                            </div>
+                          </td>
+                          <td>20</td>
+                          <td>Türkiye / Almanya</td>
+                          <td>30 Haz 2025</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img src="https://img.a.transfermarkt.technology/portrait/medium/884821-1698926798.jpg?lm=1" alt="">
+                            33
+                            <div>
+                              <h4>Gökdeniz Gürpüz</h4>
+                              <h6>Orta Saha</h6>
+                            </div>
+                          </td>
+                          <td>19</td>
+                          <td>Türkiye / Almanya</td>
+                          <td>30 Haz 2027</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img src="https://img.a.transfermarkt.technology/portrait/medium/217111-1701255091.png?lm=1" alt="">
+                            22
+                            <div>
+                              <h4>Hakim Ziyech</h4>
+                              <h6>Forvet</h6>
+                            </div>
+                          </td>
+                          <td>31</td>
+                          <td>Fas</td>
+                          <td>30 Haz 2026</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img src="https://img.a.transfermarkt.technology/portrait/medium/332798-1658413418.jpg?lm=1" alt="">
+                            7
+                            <div>
+                              <h4>Roland Sallai</h4>
+                              <h6>Forvet</h6>
+                            </div>
+                          </td>
+                          <td>27</td>
+                          <td>Macaristan</td>
+                          <td>30 Haz 2027</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img src="https://img.a.transfermarkt.technology/portrait/medium/396908-1671104289.png?lm=1" alt="">
+                            11
+                            <div>
+                              <h4>Yunus Akgün</h4>
+                              <h6>Forvet</h6>
+                            </div>
+                          </td>
+                          <td>24</td>
+                          <td>Türkiye</td>
+                          <td>30 Haz 2027</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img src="https://img.a.transfermarkt.technology/portrait/medium/541537-1671104025.png?lm=1" alt="">
+                            53
+                            <div>
+                              <h4>Barış Alper Yılmaz</h4>
+                              <h6>Forvet</h6>
+                            </div>
+                          </td>
+                          <td>24</td>
+                          <td>Türkiye</td>
+                          <td>30 Haz 2027</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img src="https://img.a.transfermarkt.technology/portrait/medium/56416-1671109411.png?lm=1" alt="">
+                            10
+                            <div>
+                              <h4>Dries Mertens</h4>
+                              <h6>Forvet</h6>
+                            </div>
+                          </td>
+                          <td>37</td>
+                          <td>Belçika</td>
+                          <td>30 Haz 2025</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img src="https://img.a.transfermarkt.technology/portrait/medium/401923-1725459265.png?lm=1" alt="">
+                            45
+                            <div>
+                              <h4>Victor Osimhen</h4>
+                              <h6>Forvet</h6>
+                            </div>
+                          </td>
+                          <td>25</td>
+                          <td>Nijerya</td>
+                          <td>30 Haz 2025</td>
+                        </tr>
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan=2 class="center" height=70>
+                <h3>Hiçbir hakkı saklı değildir!</h3>
+            </td>
+        </tr>
+    </table>
+
+    <script src="script.js"></script>
+</html>
+</body>
+</html>
